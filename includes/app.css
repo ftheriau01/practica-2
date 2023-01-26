@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: 2.5% ;
+    padding: 2.5%;
+    border: solid .1em gray;
+    box-shadow: 1em 2em 2em;
+    border-radius: 2em;
+    display: grid;
+    column-gap: 2em;
+    row-gap: 2em;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(3, minmax(25 vh,auto));
+    grid-template-areas: 'sector1 sector2 sector2'
+                         'sector1 sector3 sector3'
+                         'sector4 sector4 sector4';                    
+}
+.sector1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    grid-area: sector1;
+    background-color: #b0fcaf;
+}
+.sector1 h3{
+    color: #027c00;
+}
+.sector2{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    grid-area: sector2;
+    background-color: #a9f8f0;
+}
+.sector2 h3{
+    color: #01a796;
+}
+.sector3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    grid-area: sector3;
+    background-color: #fdbd95;
+}
+.sector3 h3{
+    color: #c04a00 ;
+}
+#sector4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    grid-area: sector4;
+    background-color: #feacf9;
+}
+#sector4 h3{
+    color: #a01897;
+}
+h3{
+    width: fit-content;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 2em;
+}
