@@ -20,7 +20,7 @@ body {
     column-gap: 2em;
     row-gap: 2em;
     grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(3, minmax(25 vh,auto));
+    grid-template-rows: repeat(3, minmax(30vh, auto));
     grid-template-areas: 'sector1 sector2 sector2'
                          'sector1 sector3 sector3'
                          'sector4 sector4 sector4';                    
